@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+
+/*Home*/
+
+.imgHome{
+   width: 100%;
+}
+
+.sectionHome{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3%; 
+}
+
+.sectionHome div h1 {
+   animation-name: animacaoBolada;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   margin: 1%;
+   width: 100%;
+   font-family:'Bowlby One SC', cursive;
+   color: #c06014;
+   font-size: 60px;
+   
+}
+
+@keyframes animacaoBolada {
+   0%   { 
+      text-shadow: 5px 5px 5px #0c0c0c;
+   }
+   25%  { text-shadow: 5px 5px 5px #9ea07a;}
+   50%  { text-shadow: 5px 5px 5px #292525; }
+   75%  { text-shadow: 5px 5px 5px #9ea07a;}
+   100% { 
+      text-shadow: 5px 5px 5px #0c0c0c;
+   }
+}
+
+.sectionHome div p {
+   margin: 1%;
+   font-family:'Anton', sans-serif;
+   color: #c06014;
+   font-size: 30px;
+   background-color: #eddbcd;
+   border-radius: 5px;
+}
+
+.sectionHome div button{
+   display: none;
+   transition: 1s;
+   font-family:'Anton', sans-serif;
+   font-size: 28px;
+   color:#0a1a34;
+   border-radius: 15px;
+}
+
+.sectionHome div button:hover{
+   transition: 1s;
+   cursor: pointer;
+   color: #0a1a34;  
+}
+
+.imgSectionHome{
+   margin-left: 5%;
+}
+
+
+/*Quem somos*/
+
+.sectionQuemSomos{
+   background-color: #cac6db;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.textQuemSomos{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;   
+}
+
+
+.imgQuemSomos{
+   width: 50%;
+   padding: 10px;
+}
+
+/*@media*/
+
+@media screen and (max-width:600px){
+  /*Home*/
+
+   .sectionHome{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .sectionHome div h1 {
+     animation-name: animacaoBolada;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     width: 100%;
+     margin: 1%;
+     font-size: 25px;
+  }
+
+   .sectionHome div p {
+     margin: 1%;
+     font-size: 18px;
+  }
+
+  .sectionHome div{
+     width: 100%;
+     margin: 2%;
+  }
+
+  /*Quem Somos*/
+
+  .sectionQuemSomos{
+   flex-direction: column;
+   }
+
+   .imgQuemSomos{
+      width: 100%;
+      padding: 0;
+   }
+}
