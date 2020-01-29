@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+.divsaoSection{
+   width: 100%;
+   height: 40px;
+}
 
 /*Home*/
 
 .imgHome{
+   transition: all 1s;
+   animation-name: animacaoApareceDireita;
+   animation-duration: 1s;
    margin-top: 80px;
    width: 100%;
 }
@@ -27,17 +34,6 @@
    
 }
 
-@keyframes animacaoBolada {
-   0%   { 
-      text-shadow: 5px 5px 5px #0c0c0c;
-   }
-   25%  { text-shadow: 5px 5px 5px #9ea07a;}
-   50%  { text-shadow: 5px 5px 5px #292525; }
-   75%  { text-shadow: 5px 5px 5px #9ea07a;}
-   100% { 
-      text-shadow: 5px 5px 5px #5a5555;
-   }
-}
 
 .sectionHome div p {
    margin: 1%;
@@ -47,30 +43,20 @@
    background-color: #eddbcd;
    border-radius: 5px;
 }
-
-.sectionHome div button{
-   display: none;
-   transition: 1s;
-   font-family:'Poppins';
-   font-size: 28px;
-   color:#0a1a34;
-   border-radius: 15px;
-}
-
-.sectionHome div button:hover{
-   transition: 1s;
-   cursor: pointer;
-   color: #0a1a34;  
-}
-
 .imgSectionHome{
    margin-left: 5%;
 }
 
+.sectionHome div{
+   transition: all 1s;
+   animation-name: animacaoApareceEsquerda;
+   animation-duration: 1s;
+}
 
 /*Quem somos*/
 
 .sectionQuemSomos{
+   transition: 4s;
    font-family:'Poppins';
    color: #727272;
    font-size: 30px;
@@ -93,10 +79,14 @@
    width: 100%;   
 }
 
+.textQuemSomos p{
+   margin: 2%;
+}
+
 .textQuemSomos h1{
    font-family:'Poppins', cursive;
    color: #c06014;
-   font-size: 60px;
+   font-size: 70px;
 }
 
 .imgQuemSomos{
@@ -120,6 +110,34 @@
    margin: 1%;
 }
 
+.missaoVisaoValores{
+   background-color: #fff;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.missaoVisaoValores div{
+   width:100%;
+   background-color: #fff;
+}
+
+.missaoVisaoValores div h1{
+   text-shadow: 0.5px 0px 0px #c06014, 
+                 0px 0px 0px #c06014, 
+                 0px 0.5px 0px #c06014, 
+                 0px 0px 0px #c06014;
+}
+
+.missaoVisaoValores div p{
+   margin: 1%;
+}
+
+.missaoVisaoValores img{
+   width: 40%;
+}
+
+
 /*@media*/
 
 @media screen and (max-width:600px){
@@ -132,7 +150,7 @@
 
    .sectionHome div h1 {
      animation-name: animacaoBolada;
-     animation-duration: 3s;
+     animation-duration: 1s;
      animation-iteration-count: infinite;
      width: 100%;
      margin: 1%;
@@ -165,8 +183,74 @@
       padding: 0;
    }
 
+   .missaoVisaoValores{
+     flex-direction: column;
+   }
+
    .composicaoQuemSomos h1{
       font-size: 30px;
    }
 
+}
+
+@keyframes animacaoBolada {
+   0%   { 
+      text-shadow: 5px 5px 5px #0c0c0c;
+   }
+   25%  { text-shadow: 5px 5px 5px #9ea07a;}
+   50%  { text-shadow: 5px 5px 5px #292525; }
+   75%  { text-shadow: 5px 5px 5px #9ea07a;}
+   100% { 
+      text-shadow: 5px 5px 5px #5a5555;
+   }
+}
+
+@keyframes animacaoApareceEsquerda {
+   0%   { 
+      margin-left: -500%;
+   }
+   100% { 
+      margin-left: 0%;
+   }
+}
+
+@keyframes animacaoApareceDireita {
+   0%   { 
+      margin-right: -500%;
+   }
+   100% { 
+      margin-left: 0%;
+   }
+}
+
+.animacaoDireita{
+   animation-name: animacaoApareceDireita;
+   animation-duration: 1s;
+}
+
+.animacaoEsquerda{
+   animation-name: animacaoApareceEsquerda;
+   animation-duration: 0.1s;
+}
+
+[data-anime]{
+   opacity: 0%;
+   transition: 3s;
+}
+
+[data-anime="left"]{
+   transform: translate3d(-100px,0,0);
+}
+
+[data-anime="right"]{
+   transform: translate3d(100px,0,0);
+}
+
+[data-anime="top"]{
+   transform: translate3d(0,100px,0);
+}
+
+[data-anime].animate {
+   opacity: 100%;
+   transform: translate3d(0px,0px,0px);
 }

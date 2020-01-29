@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import './Header.css';
 
 export class Header extends Component{
+    
+    resetarCheckMenu() {
+        var elemento = window.document.getElementById("btMenu");
+        elemento.checked=false
+    }
+    
+    
     render(){
+        
         return(
         <div>
             <input type="checkbox" id="btMenu"></input>
@@ -16,19 +24,19 @@ export class Header extends Component{
                 
                 <ul>
                     <li>
-                       <a href="#">HOME</a> 
+                       <a href="#home" onClick={this.resetarCheckMenu}>HOME</a> 
                     </li>
                     <li>
-                    <a href="#">QUEM SOMOS</a>
+                    <a href="#quemSomos" onClick={this.resetarCheckMenu}>QUEM SOMOS</a>
                     </li>
                     <li>
-                        <a href="#">SERVIÇOS</a>
+                        <a href="#" onClick={this.resetarCheckMenu}>SERVIÇOS</a>
                     </li>
                     <li>
-                        <a href="#">CONTATOS</a>
-                    </li>
+                        <a href="#" onClick={this.resetarCheckMenu}>CONTATOS</a>
+                        </li>
                 </ul>
-                
+
                 <span className="spanLogin">
                     <a href="#">LOGIN</a>
                 </span>
