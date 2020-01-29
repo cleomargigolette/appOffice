@@ -17,7 +17,7 @@ export class Site extends Component{
             
             <section className="sectionHome">
                 <div>
-                    <h1>Auxilio Maternidade:</h1>
+                    <h1>Salário Maternidade:</h1>
                     <p>O que é, <br/> como funciona <br/>  e quem tem direito?</p>
                     <button>Saiba mais</button>
                 </div>
@@ -25,19 +25,35 @@ export class Site extends Component{
             </section>
 
             <section className="sectionQuemSomos">
-                <img className="imgQuemSomos" src={ImagSectionQuemSomos} alt="imagem de um bebê em preto e branco"/>
-                <div className="textQuemSomos">
-                    <h1>
-                        Quem Somos
-                    </h1>
-                    <p>
-                        Uma empresa especializada em ajudar mamães<br></br>
-                        com o seu auxilio maternidade. 
-                    </p>
-                    <p>
-                        Com mais de 10 anos atuando junto as mamães. 
-                    </p>
+                <div className="titleQuemSomos">
+                    <div className="textQuemSomos">
+                        <h1>
+                            Quem Somos
+                        </h1>
+                    </div>
+                    <img className="imgQuemSomos" src={ImagSectionQuemSomos} alt="imagem de um bebê em preto e branco"/>
                 </div>
+                <div className="composicaoQuemSomos">
+                    <div>
+                        <h1>HISTÓRIA</h1>
+                        <p>Fundada em 2013, estamos a mais de 6 anos atuando a favor das mamães
+                            que buscam oque é seu de direito. Nesses anos de caminhada nos desenvolvemos
+                            e nos especializamos em salário maternidade. 
+                        </p>
+                    </div>
+                        <h1>DIFERENCIAIS</h1>
+                        <p>Hoje atuamos em todo o território do Brasil, ajudando até aquelas mamães
+                            que estão em lugares afastado de grandes centros.
+                        </p>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+
+                </div>
+ 
             </section>
             <Footer/>
         </div>)

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 
 /*Home*/
 
 .imgHome{
+   margin-top: 80px;
    width: 100%;
 }
 
@@ -21,7 +21,7 @@
    animation-iteration-count: infinite;
    margin: 1%;
    width: 100%;
-   font-family:'Bowlby One SC', cursive;
+   font-family:'Poppins', cursive;
    color: #c06014;
    font-size: 60px;
    
@@ -35,15 +35,15 @@
    50%  { text-shadow: 5px 5px 5px #292525; }
    75%  { text-shadow: 5px 5px 5px #9ea07a;}
    100% { 
-      text-shadow: 5px 5px 5px #0c0c0c;
+      text-shadow: 5px 5px 5px #5a5555;
    }
 }
 
 .sectionHome div p {
    margin: 1%;
-   font-family:'Anton', sans-serif;
-   color: #c06014;
-   font-size: 30px;
+   font-family:'Poppins';
+   color: #727272;
+   font-size: 20px;
    background-color: #eddbcd;
    border-radius: 5px;
 }
@@ -51,7 +51,7 @@
 .sectionHome div button{
    display: none;
    transition: 1s;
-   font-family:'Anton', sans-serif;
+   font-family:'Poppins';
    font-size: 28px;
    color:#0a1a34;
    border-radius: 15px;
@@ -71,10 +71,19 @@
 /*Quem somos*/
 
 .sectionQuemSomos{
-   background-color: #cac6db;
+   font-family:'Poppins';
+   color: #727272;
+   font-size: 30px;
+   background-color: #f1eff8;
    width: 100%;
    display: flex;
+   flex-direction: column;
    justify-content: center;
+}
+
+.titleQuemSomos{
+   display: flex;
+   flex-direction: row;
 }
 
 .textQuemSomos{
@@ -84,10 +93,31 @@
    width: 100%;   
 }
 
+.textQuemSomos h1{
+   font-family:'Poppins', cursive;
+   color: #c06014;
+   font-size: 60px;
+}
 
 .imgQuemSomos{
    width: 50%;
    padding: 10px;
+}
+
+.composicaoQuemSomos h1{
+   font-size: 40px;
+   color: transparent;
+   text-shadow: 0.5px 0px 0px #c06014, 
+                 0px 0px 0px #c06014, 
+                 0px 0.5px 0px #c06014, 
+                 0px 0px 0px #c06014;
+}
+
+.composicaoQuemSomos p{
+   background-color: #e8e5f3;
+   border-radius: 5px;
+   font-size: 18px;
+   margin: 1%;
 }
 
 /*@media*/
@@ -106,7 +136,8 @@
      animation-iteration-count: infinite;
      width: 100%;
      margin: 1%;
-     font-size: 25px;
+     font-size: 40px;
+     line-height: 1.6;
   }
 
    .sectionHome div p {
@@ -121,12 +152,21 @@
 
   /*Quem Somos*/
 
-  .sectionQuemSomos{
-   flex-direction: column;
-   }
+  .titleQuemSomos{
+     display: flex;
+     flex-direction: column;
+  }
 
+  .titleQuemSomos h1{
+   font-size: 40px;
+   }    
    .imgQuemSomos{
       width: 100%;
       padding: 0;
    }
+
+   .composicaoQuemSomos h1{
+      font-size: 30px;
+   }
+
 }
