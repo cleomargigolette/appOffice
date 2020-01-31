@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import { Header } from '../../component/header/Header.js';
-import ImgHome from './../../img/imgHome.jpg';
-import ImgSectionHome from './../../img/baby-2025691_1280_Easy-Resize.jpg';
+import ImgHome from './../../img/imgBannerHome.jpg';
+import ImgSectionHome from './../../img/imgHome.jpg';
 import ImagSectionQuemSomos from './../../img/imgSectionQuemSomos.jpg';
 import IconMissao from './../../icon/missao4.svg';
 import IconVisao from './../../icon/visao3.png';
 import IconValores from './../../icon/valores3.svg';
+import IconFace from './../../icon/face.svg';
+import IconInsta from './../../icon/insta.svg';
+import IconWhats from './../../icon/whats.svg';
+import IconQuemSomos from './../../icon/quemSomos.svg';
+import IconEmail from './../../icon/email.svg';
+import IconTelefone from './../../icon/telefone.svg';
+import IconCelular from './../../icon/whatsFooter.svg';
+import LogoFooter from './../../img/logoFooter.jpeg';
 import { Footer } from '../../component/footer/Footer.js';
 import './Site.css';
 
 export class Site extends Component{
-
-    
-    
 
     animacao = window.addEventListener('scroll', function(){
         
@@ -33,6 +38,9 @@ export class Site extends Component{
     render(){ 
         return(
         <div className="home">
+            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=553193320702" target="_blank">
+                <img className="bntWhatsFixo" src={IconWhats} alt="icone whats"/>
+            </a>
             <Header/>
             <div id="home">
                 <img className="imgHome" src={ImgHome} alt="imagem de uma mãe e sua filha pequena." />
@@ -48,12 +56,13 @@ export class Site extends Component{
             </section>
             
             <section className="sectionQuemSomos" id="quemSomos">
-                <div className="divsaoSection"></div>
+                <div className="divisaoSection"></div>
                 <div className="titleQuemSomos">
                     <div className="textQuemSomos">
                         <h1>
-                            Quem <br/>Somos
+                            Quem Somos
                         </h1>
+                        <img src={IconQuemSomos} alt="icone quem somos"/>
                     </div>
                     <img className="imgQuemSomos" src={ImagSectionQuemSomos} alt="imagem de um bebê em preto e branco"/>
                 </div>
@@ -61,13 +70,13 @@ export class Site extends Component{
                     <div>
                         <h1>HISTÓRIA</h1>
                         <p>Fundada em 2013, há mais de 6 anos atuando a favor das mamães
-                            que buscam oque é seu de direito. Nesses anos de caminhada nos desenvolvemos
+                            que buscam o que é seu de direito. Nesses anos de caminhada nos desenvolvemos
                             e nos especializamos em salário maternidade. 
                         </p>
                     </div>
                         <h1>DIFERENCIAIS</h1>
-                        <p>Hoje atuamos em todo o território do Brasil, ajudando até aquelas mamães
-                            que estão em lugares afastado de grandes centros.
+                        <p>Hoje atuamos em todo o território nacional, ajudando até aquelas mamães
+                            que estão em lugares mais afastado de grandes centros.
                         </p>
                     <div className="missaoVisaoValores">
                         <div >
@@ -91,9 +100,55 @@ export class Site extends Component{
                         <div >
                             <h1>VALORES</h1>
                             <img className="valores col-wide" src={IconValores} alt="ícone valores" data-anime="right"/>
-                            <p>Ética<br></br>Transparência<br></br>Resultados<br></br>Humanização</p>
+                            <p>Ética<br></br>Transparência<br></br>Humanização</p>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="sectionContato" id="contato">
+                <div className="divisaoSection"></div>
+                <div className="divisaoSection"></div>
+                <div>
+                    <h1>CONHEÇA NOSSAS REDES SOCIAS OU TIRE SUAS DÚVIDAS PELO WHATS</h1>
+                    <p>Click nos ícones abaixo para acessar</p>
+                </div>
+                <hr></hr>
+                <div className="redesSociais">
+                    <div className="face" >
+                    <a href="https://www.facebook.com/assesoriarmraccoltoemoraes/" target="_blank">
+                        <img  src={IconFace} alt="iconFace"/></a>
+                    </div>
+                    <div className="whats">
+                    <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5531992027747" target="_blank">
+                        <img  src={IconWhats} alt="iconWhats"/></a>
+                    </div>
+                    <div className="insta">
+                    <a href="https://www.instagram.com/raccoltoemoraes?r=nametag" target="_blank">
+                        <img  src={IconInsta} alt="iconInsta "/></a>
+                    </div>
+                </div>
+                <div className="contatoFooter">
+                    <div className="contato">
+                        <div>
+                            <img src={IconTelefone} alt="icone telefoen"/>
+                            <p>(31)32014476</p> 
+                        </div>
+                        <div>
+                            <img src={IconCelular} alt="icone celular"/>
+                            <p>(31)992027747 (31)993320702</p>
+                            
+                        </div>
+                        <div>
+                            <img src={IconEmail} alt="icone email"/> 
+                            <p>raccoltoemoraes@hotmail.com</p>
+                        </div> 
+                        
+                    </div>
+                        
+                    <div className="logoContato">
+                        <img src={LogoFooter} alt="logo da empresa"/> 
+                    </div>
+
                 </div>
             </section>
             <Footer/>

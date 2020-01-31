@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Logo from './../../img/logoHeader.jpeg';
 import './Header.css';
 
 export class Header extends Component{
@@ -19,7 +20,7 @@ export class Header extends Component{
                 <label for="btMenu" className="btMenu">&#9776;</label>
                 
                 <div className="logo">
-                    <img src="https://img.icons8.com/wired/64/000000/adobe-muse.png" alt="imagem de icon"/>
+                    <img src={Logo} alt="imagem de icon"/>
                 </div>
                 
                 <ul>
@@ -33,7 +34,7 @@ export class Header extends Component{
                         <a href="#" onClick={this.resetarCheckMenu}>SERVIÇOS</a>
                     </li>
                     <li>
-                        <a href="#" onClick={this.resetarCheckMenu}>CONTATOS</a>
+                        <a href="#contato" onClick={this.resetarCheckMenu}>CONTATOS</a>
                         </li>
                 </ul>
 
