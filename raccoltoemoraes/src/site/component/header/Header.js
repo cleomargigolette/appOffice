@@ -9,7 +9,6 @@ export class Header extends Component{
         elemento.checked=false
     }
     
-    
     render(){
         
         return(
@@ -31,7 +30,7 @@ export class Header extends Component{
                     <a href="#quemSomos" onClick={this.resetarCheckMenu}>QUEM SOMOS</a>
                     </li>
                     <li>
-                        <a href="#" onClick={this.resetarCheckMenu}>SERVIÇOS</a>
+                        <a href="#servico" onClick={this.resetarCheckMenu}>SERVIÇOS</a>
                     </li>
                     <li>
                         <a href="#contato" onClick={this.resetarCheckMenu}>CONTATOS</a>
