@@ -52,7 +52,7 @@ export class Servico extends Component{
                     </h1>
                 </div>
                 <div className="apresentacaoServico">
-                    <video className="video" controls="controls" preload="preload">
+                    <video className="video" controls="controls">
                         <source src={VideoMp4} type="video/mp4"></source>
                         <source src={VideoOgg} type="video/ogv"></source>
                         <source src={VideoWebm} type="video/webm"></source> 
