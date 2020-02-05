@@ -36,7 +36,7 @@ export class QuemSomos extends Component{
                         <div className="missaoVisaoValores">
                             <div >
                                 <h1>MISSÃO</h1>
-                                <img className="missao col-wide" src={IconMissao} alt="ícone missão." data-anime="left"/>
+                                <img className="missao" src={IconMissao} alt="ícone missão." />
                                 <p>Garantir que todas as mamães que
                                     tenham direito ao salário maternidade,
                                     possam recebê-lo
@@ -45,7 +45,7 @@ export class QuemSomos extends Component{
                             </div>
                             <div >
                                 <h1>VISÃO</h1>
-                                <img className="visao col-wide" src={IconVisao} alt="ícone visao." data-anime="top" />
+                                <img className="visao" src={IconVisao} alt="ícone visao."/>
                                 <p>Ganhar destaque no Brasil,
                                 por ser uma a empresa
                                 especializada
@@ -54,7 +54,7 @@ export class QuemSomos extends Component{
                             </div>
                             <div >
                                 <h1>VALORES</h1>
-                                <img className="valores col-wide" src={IconValores} alt="ícone valores" data-anime="right"/>
+                                <img className="valores" src={IconValores} alt="ícone valores" />
                                 <p>Ética<br></br>Transparência<br></br>Humanização</p>
                             </div>
                         </div>

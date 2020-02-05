@@ -8,9 +8,12 @@ export class Home extends Component{
         return(
             <div>
                 <div id="home">
-                    <img className="imgHome" src={ImgHome} alt="imagem de uma mãe e sua filha pequena." />
-                </div>
-                
+                    <div className="nomeEmpresa">
+                        <h1>RACCOLTO E MORAES </h1>
+                    </div>
+                    <img className="imgHome" src={ImgHome} alt="imagem de uma mãe e sua filha pequena." /> 
+                   
+                </div> 
                 <section className="sectionHome" >
                     <div>
                         <h1>Salário Maternidade:</h1>
@@ -19,10 +22,8 @@ export class Home extends Component{
                             <button>SAIBA MAIS</button>
                         </a>                 
                     </div>
-                    <img className="imgSectionHome" src={ImgSectionHome} alt="sombra de uma mãe e seu filho nos braços."/>
-                    
+                    <img className="imgSectionHome" src={ImgSectionHome} alt="sombra de uma mãe e seu filho nos braços."/>                   
                 </section>
-                
             </div>
         )
     }

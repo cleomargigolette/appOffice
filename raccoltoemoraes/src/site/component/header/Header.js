@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Logo from './../../img/logoHeader.jpeg';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export class Header extends Component{
@@ -16,7 +17,11 @@ export class Header extends Component{
             <input type="checkbox" id="btMenu"></input>
             <nav className="header">
                 
-                <label for="btMenu" className="btMenu">&#9776;</label>
+                <label htmlFor="btMenu" className="btMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
                 
                 <div className="logo">
                     <img src={Logo} alt="imagem de icon"/>
@@ -38,7 +43,7 @@ export class Header extends Component{
                 </ul>
 
                 <span className="spanLogin">
-                    <a href="#">LOGIN</a>
+                    <Link to="/login">LOGIN</Link>
                 </span>
             </nav>
         </div>)

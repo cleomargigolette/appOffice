@@ -6,8 +6,21 @@
     transition: all 1s;
     animation-name: animacaoApareceDireita;
     animation-duration: 1s;
-    margin-top: 80px;
     width: 100%;
+ }
+
+ .nomeEmpresa{
+   background-color: #727272;
+   opacity: 90%;
+   margin-top: 80px;
+   margin-bottom: 5px;
+   font-family:'Anton', sans-serif;
+   color: #faf7f4;
+   
+ }
+ .nomeEmpresa h1{
+   font-size: 30px;
+   margin: 0%;
  }
  
  .sectionHome{
@@ -75,6 +88,12 @@ button:hover{
 
  @media screen and (max-width:780px){
   /*Home*/
+  .nomeEmpresa{
+   bottom: 454px;
+   right: 5%;
+   font-size: 9px;
+ }
+
    .sectionHome{
       flex-direction: column;
    }

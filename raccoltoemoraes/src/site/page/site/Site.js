@@ -5,7 +5,7 @@ import { QuemSomos} from './../quemSomos/QuemSomos.js';
 import { Servico } from './../servico/Servico.js';
 import { Contato } from './../contato/Contato.js';
 import { Footer } from '../../component/footer/Footer.js';
-import IconWhats from './../../icon/whats.svg';
+import { ButtonWhatsFixo } from './../../component/button/buttonWhatsFixo/ButtonWhatsFixo.js';
 import './Site.css';
 
 export class Site extends Component{
@@ -29,9 +29,7 @@ export class Site extends Component{
     render(){ 
         return(
         <div className="site">
-            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=553193320702" target="_blank">
-                <img className="bntWhatsFixo" src={IconWhats} alt="icone whats"/>
-            </a>
+            <ButtonWhatsFixo/>
             <Header/>
             <Home/>
             <QuemSomos/>

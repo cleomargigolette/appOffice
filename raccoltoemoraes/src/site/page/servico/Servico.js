@@ -33,7 +33,7 @@ export class Servico extends Component{
                             Pediu demissão grávida?
                         </p>
                         <p>
-                            Abandou o trabalho?
+                            Abandonou o trabalho?
                         </p>
                         <p>
                             Era menor aprendiz?

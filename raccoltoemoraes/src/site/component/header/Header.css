@@ -18,13 +18,28 @@
     display: none;
 }
 
-label[for="btMenu"]{
+.btMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color:#c06014;
     color:#faf7f4;
     width: 40px;
-    height: 40px;
+    height: 37px;
     border-radius: 5px;
     display: none;
+
+}
+
+.btMenu div{
+    align-items: center;
+    justify-content: center;
+    background-color: #faf7f4;
+    width: 80%;
+    height: 5px;
+    border-radius: 2px;
+    margin: 12%;
 
 }
 
@@ -91,17 +106,19 @@ label[for="btMenu"]{
 
 @media screen and (max-width:780px){
 
-    label[for="btMenu"]{
-        display: inline;
-        cursor: pointer;
-        padding: 0% 1% 0% 1%;
-        margin-left: 2%;
+    .spanLogin a{
+       font-size: 26px;
     }
 
-    .btMenu:hover{
-        transition: 1s;
+    .logo{
+        margin-left:-6%;
+    }
+
+    .btMenu{
+        display: inline;
         cursor: pointer;
-        padding: 0.5% 1% 0.5% 1%;
+        padding: 1% 1% 0% 0.5%;
+        margin-left: 2%;
     }
 
     .header ul{
@@ -115,11 +132,11 @@ label[for="btMenu"]{
         margin:0%;
         padding: 0%;
         border-radius: 5px;
-        background-color: #3d3838;
-        opacity: 80%;
     }
 
     .header ul li{
+        opacity: 85%;
+        background-color: #3d3838;
         border: solid 1px;
         border-radius: 5px;
     }
